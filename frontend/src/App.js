@@ -6,7 +6,7 @@ function App() {
   const [contacts, setContacts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/contacts")
+    fetch("https://contact-management-backend-9tet.onrender.com/api/contacts")
       .then(res => res.json())
       .then(data => setContacts(data));
   }, []);
@@ -16,7 +16,7 @@ function App() {
   };
 
   const deleteContact = async (id) => {
-    await fetch(`http://localhost:5000/api/contacts/${id}`, {
+    await fetch(`https://contact-management-backend-9tet.onrender.com/api/contacts/${id}`, {
       method: "DELETE"
     });
     setContacts(contacts.filter(c => c._id !== id));
