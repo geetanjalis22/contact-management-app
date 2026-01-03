@@ -59,8 +59,8 @@ The primary goal of this task is to focus on working functionality, clean code s
 
 ---
 ## Author
-Geetanjali
+-Geetanjali
 Web Developer
 
-## Project Structure
+
 
