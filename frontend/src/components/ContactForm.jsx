@@ -18,7 +18,7 @@ export default function ContactForm({ onAdd }) {
     e.preventDefault();
     if (!validate()) return;
 
-    const res = await fetch("http://localhost:5000/api/contacts", {
+    const res = await fetch("https://contact-management-backend-9tet.onrender.com/api/contacts", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(form),
@@ -49,3 +49,4 @@ export default function ContactForm({ onAdd }) {
     </form>
   );
 }
+
